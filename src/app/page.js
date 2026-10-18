@@ -17,6 +17,25 @@ const skills = [
 
 const projects = [
   {
+  title: "Fit-Log",
+  category: "Workout Library",
+  description:
+    "A modern, responsive workout platform built with Next.js. Explore exercises, view workout details, sort workouts, create daily plans, save favorite exercises, and track completed workouts.",
+  image: "/image/fit-log.png",
+  live: "https://fit-log-workout-library-six.vercel.app",
+  github: "https://github.com/riaduldev/fit-log-app",
+  tech: [
+    "Next.js",
+    "React",
+    "JavaScript",
+    "Tailwind CSS",
+    "daisyUI",
+    "Lucide React",
+    "React Toastify",
+    "REST API",
+  ],
+},
+  {
     title: "DevStack",
     category: "Technology Explorer",
     description:
