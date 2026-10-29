@@ -16,6 +16,29 @@ const skills = [
 ];
 
 const projects = [
+  
+{
+  title: "Bangla News 24",
+  category: "Bangla News Platform",
+  description:
+    "A modern, responsive Bangla news platform built with Next.js. Explore news content through a user-friendly interface with secure authentication, MongoDB integration, responsive layouts, loading states, error handling, and toast notifications.",
+  image: "/image/bangla-news-24.png",
+  live: "https://bangla-news-24-azure.vercel.app/",
+  github: "https://github.com/riaduldev/bangla-news-24",
+  tech: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "daisyUI",
+    "Better Auth",
+    "MongoDB",
+    "React Toastify",
+    "React Marquee Text",
+    "REST API",
+  ],
+},
+
   {
   title: "Fit-Log",
   category: "Workout Library",
