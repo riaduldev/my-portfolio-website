@@ -135,7 +135,7 @@ export default function Home() {
                 onClick={() => setMenuOpen(false)}
                 className="mt-2 rounded-lg bg-violet-600 px-4 py-3 text-center font-semibold"
               >
-                Let's Talk ↗
+                Lets Talk ↗
               </Link>
             </div>
           </div>
@@ -159,7 +159,7 @@ export default function Home() {
             </div>
 
             <p className="mb-3 text-sm font-medium tracking-[0.2em] text-gray-400 uppercase">
-              Hello, I'm
+              Hello, Im
             </p>
 
             <h1 className="text-4xl leading-tight font-extrabold tracking-tight sm:text-6xl xl:text-7xl">
@@ -264,7 +264,7 @@ export default function Home() {
 
             <div>
               <p className="text-sm leading-8 text-gray-400 sm:text-base">
-                I'm a web development learner passionate about creating
+                Im a web development learner passionate about creating
                 beautiful interfaces and useful web applications. I focus on
                 responsive design, reusable components and writing maintainable
                 code while continuously improving my skills.
@@ -273,7 +273,7 @@ export default function Home() {
                 href="#contact"
                 className="mt-6 inline-flex items-center gap-2 font-semibold text-violet-400 hover:text-violet-300"
               >
-                Let's connect <span>→</span>
+                Lets connect <span>→</span>
               </Link>
             </div>
           </div>
@@ -411,14 +411,14 @@ export default function Home() {
         </p>
 
         <h2 className="mt-4 text-3xl leading-tight font-bold sm:text-5xl">
-          Let's build something
+          Lets build something
           <span className="block bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text py-1 text-transparent">
             amazing together.
           </span>
         </h2>
 
         <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-gray-400 sm:text-base">
-          I'm always interested in learning, collaborating and exploring new
+          Im always interested in learning, collaborating and exploring new
           opportunities. Feel free to reach out.
         </p>
 
