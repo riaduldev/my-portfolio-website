@@ -17,6 +17,28 @@ const skills = [
 
 const projects = [
   {
+  title: "BazarDor",
+  category: "Bangla Market Price Tracker",
+  description:
+    "A modern, responsive Bangla market-price web application built with Next.js. Explore everyday product prices, compare market trends, browse products by category, view detailed price information, and discover rising and falling prices. Features secure authentication with Google and GitHub, MongoDB integration, profile management, numeric price sorting, and a user-friendly responsive interface.",
+  image: "/image/bazar-dor.png",
+  live: "https://bazar-dor-web-beta.vercel.app/",
+  github: "https://github.com/riaduldev/bazar-dor-web",
+  tech: [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind CSS",
+    "daisyUI",
+    "HeroUI",
+    "Better Auth",
+    "MongoDB",
+    "React Toastify",
+    "React Marquee Text",
+    "REST API",
+  ],
+},
+  {
     title: "Bangla News 24",
     category: "Bangla News Platform",
     description:
