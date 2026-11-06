@@ -264,7 +264,7 @@ export default function Home() {
           <div className="mt-4 grid gap-8 lg:grid-cols-2 lg:gap-16">
             <h2 className="text-3xl leading-tight font-bold sm:text-4xl">
               Turning ideas into
-              <span className="text-violet-400"> digital experiences.</span>
+              <span className="text-violet-400">digital experiences.</span>
             </h2>
 
             <div>
