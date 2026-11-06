@@ -1,4 +1,3 @@
-
 "use client";
 
 import Image from "next/image";
@@ -100,7 +99,7 @@ const socialLinks = [
   },
   {
     name: "Email",
-    href: "mailto:riadulislam.bd.pabna@gmail.com",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=riadulislam.bd.pabna@gmail.com",
   },
 ];
 
@@ -109,12 +108,10 @@ export default function Home() {
   const role = "Frontend Developer";
   const profileImage = "/image/riadul-profile.png";
 
-  const resume =
-    "https://drive.google.com/uc?export=download&id=19t2KgGrfYcib4CE6aEJ5VTMsXYrZ7cuE";
+  const resume ="https://drive.google.com/uc?export=download&id=19t2KgGrfYcib4CE6aEJ5VTMsXYrZ7cuE";
 
   return (
     <div className="min-h-screen overflow-hidden bg-[#09090f] text-white">
-
       {/* HERO */}
       <section
         id="home"
@@ -126,7 +123,6 @@ export default function Home() {
         <div className="pointer-events-none absolute right-0 top-20 h-72 w-72 rounded-full bg-fuchsia-600/10 blur-[110px]" />
 
         <div className="relative grid w-full items-center gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10">
-
           {/* Intro */}
           <div>
             <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-violet-400/20 bg-violet-500/10 px-4 py-2 text-sm text-violet-300">
@@ -152,9 +148,9 @@ export default function Home() {
             </h2>
 
             <p className="mt-5 max-w-xl text-sm leading-7 text-gray-400 sm:text-base sm:leading-8">
-              I build modern, responsive, and user-friendly web experiences
-              with React and Next.js. I enjoy turning creative ideas into
-              clean, functional, and meaningful digital products.
+              I build modern, responsive, and user-friendly web experiences with
+              React and Next.js. I enjoy turning creative ideas into clean,
+              functional, and meaningful digital products.
             </p>
 
             {/* Action Buttons */}
@@ -180,12 +176,8 @@ export default function Home() {
                 <a
                   key={social.name}
                   href={social.href}
-                  target={social.name === "Email" ? undefined : "_blank"}
-                  rel={
-                    social.name === "Email"
-                      ? undefined
-                      : "noopener noreferrer"
-                  }
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="transition hover:text-violet-400"
                 >
                   {social.name} ↗
@@ -197,7 +189,6 @@ export default function Home() {
           {/* PROFILE IMAGE */}
           <div className="mx-auto w-full max-w-[350px] sm:max-w-[400px] lg:max-w-[420px]">
             <div className="relative mx-auto aspect-[4/5] max-h-[490px]">
-
               {/* Glow Effect */}
               <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-violet-600/50 via-fuchsia-500/20 to-transparent blur-2xl" />
 
@@ -217,9 +208,7 @@ export default function Home() {
 
               {/* Floating Card 1 */}
               <div className="absolute -right-2 top-8 rounded-xl border border-white/10 bg-[#171420]/95 px-3 py-3 shadow-xl sm:-right-5 sm:px-4">
-                <p className="text-xs text-gray-400">
-                  Currently learning
-                </p>
+                <p className="text-xs text-gray-400">Currently learning</p>
 
                 <p className="mt-1 font-heading text-sm font-semibold text-violet-300">
                   React & Next.js
@@ -228,9 +217,7 @@ export default function Home() {
 
               {/* Floating Card 2 */}
               <div className="absolute -bottom-5 -left-2 rounded-xl border border-white/10 bg-[#171420]/95 px-4 py-3 shadow-xl sm:-left-5 sm:px-5">
-                <p className="text-xs text-gray-400">
-                  My focus
-                </p>
+                <p className="text-xs text-gray-400">My focus</p>
 
                 <p className="mt-1 font-heading text-sm font-semibold">
                   Building for the web ✦
@@ -238,36 +225,28 @@ export default function Home() {
               </div>
             </div>
           </div>
-
         </div>
       </section>
 
       {/* ABOUT */}
-      <section
-        id="about"
-        className="border-t border-white/5 bg-white/[0.02]"
-      >
+      <section id="about" className="border-t border-white/5 bg-white/[0.02]">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
-
           <p className="text-sm font-semibold tracking-[0.2em] text-violet-400 uppercase">
             Get to know me
           </p>
 
           <div className="mt-4 grid gap-8 lg:grid-cols-2 lg:gap-16">
-
             <h2 className="font-heading text-3xl leading-tight font-bold sm:text-4xl">
               Turning ideas into{" "}
-              <span className="text-violet-400">
-                digital experiences.
-              </span>
+              <span className="text-violet-400">digital experiences.</span>
             </h2>
 
             <div>
               <p className="text-sm leading-8 text-gray-400 sm:text-base">
                 I&apos;m a web developer passionate about creating beautiful
                 interfaces and useful web applications. I focus on responsive
-                design, reusable components, and writing maintainable code
-                while continuously improving my skills.
+                design, reusable components, and writing maintainable code while
+                continuously improving my skills.
               </p>
 
               <Link
@@ -277,7 +256,6 @@ export default function Home() {
                 Let&apos;s connect <span aria-hidden="true">→</span>
               </Link>
             </div>
-
           </div>
         </div>
       </section>
@@ -288,7 +266,6 @@ export default function Home() {
         className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24"
       >
         <div className="text-center">
-
           <p className="text-sm font-semibold tracking-[0.2em] text-violet-400 uppercase">
             My toolkit
           </p>
@@ -301,7 +278,6 @@ export default function Home() {
             The tools I use to create responsive interfaces and modern web
             applications.
           </p>
-
         </div>
 
         <div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-4">
@@ -322,9 +298,7 @@ export default function Home() {
         className="border-y border-white/5 bg-white/[0.02]"
       >
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 lg:py-24">
-
           <div className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
-
             <div>
               <p className="text-sm font-semibold tracking-[0.2em] text-violet-400 uppercase">
                 Selected work
@@ -343,7 +317,6 @@ export default function Home() {
             >
               More on GitHub ↗
             </a>
-
           </div>
 
           <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -352,7 +325,6 @@ export default function Home() {
                 key={project.title}
                 className="group overflow-hidden rounded-2xl border border-white/10 bg-[#101018] transition duration-300 hover:-translate-y-1 hover:border-violet-400/40"
               >
-
                 {/* Project Image */}
                 <div className="aspect-[16/10] overflow-hidden bg-gradient-to-br from-violet-950 to-[#181321]">
                   <Image
@@ -370,7 +342,6 @@ export default function Home() {
 
                 {/* Project Details */}
                 <div className="p-5 sm:p-6">
-
                   <p className="text-xs font-medium tracking-wide text-violet-400">
                     {project.category}
                   </p>
@@ -397,7 +368,6 @@ export default function Home() {
 
                   {/* Project Links */}
                   <div className="mt-6 flex flex-wrap gap-4 border-t border-white/10 pt-4 text-sm font-heading font-semibold">
-
                     {project.live !== "#" && (
                       <a
                         href={project.live}
@@ -417,7 +387,6 @@ export default function Home() {
                     >
                       GitHub ↗
                     </a>
-
                   </div>
                 </div>
               </article>
@@ -431,14 +400,12 @@ export default function Home() {
         id="contact"
         className="mx-auto max-w-5xl px-4 py-20 text-center sm:px-6 lg:px-8 lg:py-28"
       >
-
         <p className="text-sm font-semibold tracking-[0.2em] text-violet-400 uppercase">
           Have a project in mind?
         </p>
 
         <h2 className="mt-4 font-heading text-3xl leading-tight font-bold sm:text-5xl">
           Let&apos;s build something
-
           <span className="block bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text py-1 text-transparent">
             amazing together.
           </span>
@@ -450,7 +417,9 @@ export default function Home() {
         </p>
 
         <a
-          href="mailto:riadulislam.bd.pabna@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=riadulislam.bd.pabna@gmail.com&su=Let's%20Work%20Together"
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-8 inline-flex items-center justify-center gap-2 rounded-xl bg-violet-600 px-7 py-3.5 font-heading font-semibold text-white transition hover:-translate-y-1 hover:bg-violet-500"
         >
           Get in Touch ↗
@@ -462,11 +431,7 @@ export default function Home() {
               key={social.name}
               href={social.href}
               target={social.name === "Email" ? undefined : "_blank"}
-              rel={
-                social.name === "Email"
-                  ? undefined
-                  : "noopener noreferrer"
-              }
+              rel={social.name === "Email" ? undefined : "noopener noreferrer"}
               className="transition hover:text-violet-400"
             >
               {social.name}
@@ -479,7 +444,6 @@ export default function Home() {
       <footer className="border-t border-white/10 px-4 py-6 text-center text-xs text-gray-500 sm:text-sm">
         © {new Date().getFullYear()} {name}. Built with passion and React.
       </footer>
-
     </div>
   );
 }

@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${jakarta.variable} ${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col" suppressHydrationWarning>
         <Navbar></Navbar>
         <Marquee></Marquee>
         <main className="flex-1">{children}</main>

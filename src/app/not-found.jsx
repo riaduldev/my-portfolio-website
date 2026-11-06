@@ -62,7 +62,7 @@ const NotFound = () => {
 
         {/* Footer Text */}
         <p className="mt-12 text-xs tracking-wide text-gray-600 sm:text-sm">
-          LOST IN CODE? &nbsp; LET'S GET YOU BACK ON TRACK.
+          LOST IN CODE? &nbsp; LETS GET YOU BACK ON TRACK.
         </p>
       </div>
     </main>

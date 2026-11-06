@@ -1,9 +1,11 @@
+
 "use client";
 
 import { useState } from "react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
   const resume =
     "https://drive.google.com/file/d/19t2KgGrfYcib4CE6aEJ5VTMsXYrZ7cuE/view?usp=sharing";
 
@@ -22,6 +24,7 @@ const Navbar = () => {
         {/* Logo */}
         <a
           href="#home"
+          onClick={() => setMenuOpen(false)}
           className="shrink-0 text-lg font-bold tracking-tight sm:text-2xl"
         >
           <span className="text-violet-400">&lt;</span>
@@ -45,10 +48,12 @@ const Navbar = () => {
         {/* Desktop Resume Button */}
         <a
           href={resume}
-          download
+          target="_blank"
+          rel="noopener noreferrer"
           className="hidden shrink-0 items-center gap-2 rounded-lg bg-violet-600 px-4 py-2.5 text-sm font-semibold transition hover:bg-violet-700 lg:inline-flex xl:px-5"
         >
-          Download Resume <span aria-hidden="true">↓</span>
+          Download Resume
+          <span aria-hidden="true">↓</span>
         </a>
 
         {/* Mobile Menu Toggle */}
@@ -58,7 +63,7 @@ const Navbar = () => {
           aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={menuOpen}
           aria-controls="mobile-navigation"
-          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/10 text-white transition hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-violet-500 lg:hidden"
+          className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-white/10 text-white transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-500 lg:hidden"
         >
           {menuOpen ? (
             <svg
@@ -109,11 +114,13 @@ const Navbar = () => {
 
             <a
               href={resume}
-              download
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
               className="mt-2 flex w-full items-center justify-center gap-2 rounded-lg bg-violet-600 px-4 py-3 text-sm font-semibold text-white transition hover:bg-violet-700"
             >
-              Download Resume <span aria-hidden="true">↓</span>
+              Download Resume
+              <span aria-hidden="true">↓</span>
             </a>
           </div>
         </div>

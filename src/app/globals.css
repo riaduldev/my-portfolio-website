@@ -4,6 +4,7 @@
 @theme {
   --font-sans: var(--font-inter);
   --font-heading: var(--font-jakarta);
+  --animate-marquee: marquee 35s linear infinite;
 }
 
 body {
@@ -30,6 +31,4 @@ h6 {
   }
 }
 
-@theme {
-  --animate-marquee: marquee 35s linear infinite;
-}
+
