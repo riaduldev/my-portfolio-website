@@ -12,52 +12,52 @@ const skills = [
   "Next.js",
   "TypeScript",
   "Tailwind CSS",
+  "Better Auth",
   "Git & GitHub",
 ];
 
 const projects = [
-  
-{
-  title: "Bangla News 24",
-  category: "Bangla News Platform",
-  description:
-    "A modern, responsive Bangla news platform built with Next.js. Explore news content through a user-friendly interface with secure authentication, MongoDB integration, responsive layouts, loading states, error handling, and toast notifications.",
-  image: "/image/bangla-news-24.png",
-  live: "https://bangla-news-24-azure.vercel.app/",
-  github: "https://github.com/riaduldev/bangla-news-24",
-  tech: [
-    "Next.js",
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "daisyUI",
-    "Better Auth",
-    "MongoDB",
-    "React Toastify",
-    "React Marquee Text",
-    "REST API",
-  ],
-},
+  {
+    title: "Bangla News 24",
+    category: "Bangla News Platform",
+    description:
+      "A modern, responsive Bangla news platform built with Next.js. Explore news content through a user-friendly interface with secure authentication, MongoDB integration, responsive layouts, loading states, error handling, and toast notifications.",
+    image: "/image/bangla-news-24.png",
+    live: "https://bangla-news-24-azure.vercel.app/",
+    github: "https://github.com/riaduldev/bangla-news-24",
+    tech: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "daisyUI",
+      "Better Auth",
+      "MongoDB",
+      "React Toastify",
+      "React Marquee Text",
+      "REST API",
+    ],
+  },
 
   {
-  title: "Fit-Log",
-  category: "Workout Library",
-  description:
-    "A modern, responsive workout platform built with Next.js. Explore exercises, view workout details, sort workouts, create daily plans, save favorite exercises, and track completed workouts.",
-  image: "/image/fit-log.png",
-  live: "https://fit-log-workout-library-six.vercel.app",
-  github: "https://github.com/riaduldev/fit-log-app",
-  tech: [
-    "Next.js",
-    "React",
-    "JavaScript",
-    "Tailwind CSS",
-    "daisyUI",
-    "Lucide React",
-    "React Toastify",
-    "REST API",
-  ],
-},
+    title: "Fit-Log",
+    category: "Workout Library",
+    description:
+      "A modern, responsive workout platform built with Next.js. Explore exercises, view workout details, sort workouts, create daily plans, save favorite exercises, and track completed workouts.",
+    image: "/image/fit-log.png",
+    live: "https://fit-log-workout-library-six.vercel.app",
+    github: "https://github.com/riaduldev/fit-log-app",
+    tech: [
+      "Next.js",
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "daisyUI",
+      "Lucide React",
+      "React Toastify",
+      "REST API",
+    ],
+  },
   {
     title: "DevStack",
     category: "Technology Explorer",
@@ -93,7 +93,10 @@ const projects = [
 const socialLinks = [
   { name: "GitHub", href: "https://github.com/riaduldev" },
   { name: "LinkedIn", href: "www.linkedin.com/in/riaduldev365" },
-  { name: "Email", href: "https://mail.google.com/mail/?view=cm&fs=1&to=riadulislam.bd.pabna@gmail.com" },
+  {
+    name: "Email",
+    href: "https://mail.google.com/mail/?view=cm&fs=1&to=riadulislam.bd.pabna@gmail.com",
+  },
 ];
 
 export default function Home() {
@@ -103,7 +106,8 @@ export default function Home() {
   const name = "Riadul Islam";
   const role = "Frontend Developer";
   const profileImage = "/image/riadul-profile.png";
-  const resume = "/resume.pdf";
+  const resume =
+    "https://drive.google.com/file/d/19t2KgGrfYcib4CE6aEJ5VTMsXYrZ7cuE/view?usp=sharing";
 
   const navLinks = [
     { name: "Home", href: "#home" },
@@ -189,13 +193,14 @@ export default function Home() {
                 Explore My Work <span>↗</span>
               </Link>
 
-              <Link
+              <a
                 href={resume}
-                download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/15 px-6 py-3.5 font-semibold text-gray-200 transition hover:border-violet-400 hover:text-violet-300"
               >
-                Download CV <span>↓</span>
-              </Link>
+                Download Resume <span>↓</span>
+              </a>
             </div>
 
             <div className="mt-9 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-gray-400">
@@ -264,10 +269,10 @@ export default function Home() {
 
             <div>
               <p className="text-sm leading-8 text-gray-400 sm:text-base">
-                Im a web development learner passionate about creating
-                beautiful interfaces and useful web applications. I focus on
-                responsive design, reusable components and writing maintainable
-                code while continuously improving my skills.
+                Im a web development learner passionate about creating beautiful
+                interfaces and useful web applications. I focus on responsive
+                design, reusable components and writing maintainable code while
+                continuously improving my skills.
               </p>
               <Link
                 href="#contact"
