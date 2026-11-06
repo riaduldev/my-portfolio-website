@@ -1,4 +1,5 @@
-import { Geist, Geist_Mono } from "next/font/google";
+
+import Marquee from "@/components/Marquee";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Plus_Jakarta_Sans, Inter } from "next/font/google";
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <Navbar></Navbar>
+        <Marquee></Marquee>
         <main className="flex-1">{children}</main>
       </body>
     </html>
