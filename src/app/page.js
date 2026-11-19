@@ -7,19 +7,65 @@ import Link from "next/link";
 const skillCategories = [
   {
     title: "Frontend Development",
-    skills: ["React.js", "Next.js (App Router)", "TypeScript", "JavaScript (ES6+)", "Tailwind CSS", "HTML5 & CSS3"],
+    skills: [
+      "React.js",
+      "Next.js (App Router)",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "Tailwind CSS",
+      "HTML5 & CSS3",
+    ],
   },
   {
     title: "Backend & Database",
-    skills: ["Node.js", "Express.js", "MongoDB", "REST API Integration", "Server Actions"],
+    skills: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST API Integration",
+      "Server Actions",
+    ],
   },
   {
     title: "Auth, UI & Tools",
-    skills: ["Better Auth", "Git & GitHub", "daisyUI & HeroUI", "Responsive Design", "Vercel / Netlify"],
+    skills: [
+      "Better Auth",
+      "Git & GitHub",
+      "daisyUI & HeroUI",
+      "Responsive Design",
+      "Vercel / Netlify",
+    ],
   },
 ];
 
 const projects = [
+  {
+    title: "StudioSpace",
+    category: "Full-Stack • Creative Studio Booking Platform",
+    featured: true,
+    description:
+      "A full-stack creative studio discovery and booking platform that connects photographers, filmmakers, podcasters, and production teams with professional studios worldwide.",
+    highlights: [
+      "Secure authentication and role-based Host Portal",
+      "Studio listing creation, editing, management & deletion with MongoDB",
+      "Advanced studio search, category filtering, sorting & pagination",
+      "Studio details with pricing, capacity, amenities and image gallery",
+      "Responsive UI for studio hosts and creative professionals",
+    ],
+    image: "/image/studio-space-client.png",
+    live: "https://studiospace-client-eta.vercel.app",
+    github: "https://github.com/riaduldev/studiospace-client",
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "MongoDB",
+      "Express.js",
+      "REST API",
+      "Authentication",
+    ],
+  },
+
   {
     title: "BazarDor",
     category: "Full-Stack • Market Price Tracker",
@@ -34,7 +80,14 @@ const projects = [
     image: "/image/bazar-dor.png",
     live: "https://bazar-dor-web-beta.vercel.app/",
     github: "https://github.com/riaduldev/bazar-dor-web",
-    tech: ["Next.js", "TypeScript", "Tailwind CSS", "Better Auth", "MongoDB", "REST API"],
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Better Auth",
+      "MongoDB",
+      "REST API",
+    ],
   },
   {
     title: "Bangla News 24",
@@ -50,7 +103,14 @@ const projects = [
     image: "/image/bangla-news-24.png",
     live: "https://bangla-news-24-azure.vercel.app/",
     github: "https://github.com/riaduldev/bangla-news-24",
-    tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Better Auth", "MongoDB"],
+    tech: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Better Auth",
+      "MongoDB",
+    ],
   },
   {
     title: "Fit-Log",
@@ -66,7 +126,14 @@ const projects = [
     image: "/image/fit-log.png",
     live: "https://fit-log-workout-library-six.vercel.app",
     github: "https://github.com/riaduldev/fit-log-app",
-    tech: ["Next.js", "React", "JavaScript", "Tailwind CSS", "daisyUI", "REST API"],
+    tech: [
+      "Next.js",
+      "React",
+      "JavaScript",
+      "Tailwind CSS",
+      "daisyUI",
+      "REST API",
+    ],
   },
   {
     title: "DevStack",
@@ -177,8 +244,12 @@ export default function Home() {
 
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
               Full-Stack Web Developer specializing in{" "}
-              <span className="font-medium text-white">Next.js, React, TypeScript,</span> and{" "}
-              <span className="font-medium text-white">MongoDB</span>. I turn complex requirements into clean, fast, and production-ready digital products.
+              <span className="font-medium text-white">
+                Next.js, React, TypeScript,
+              </span>{" "}
+              and <span className="font-medium text-white">MongoDB</span>. I
+              turn complex requirements into clean, fast, and production-ready
+              digital products.
             </p>
 
             {/* Primary & Secondary CTAs */}
@@ -282,26 +353,47 @@ export default function Home() {
 
             <div className="space-y-5 text-sm leading-7 text-gray-300 sm:text-base sm:leading-8">
               <p>
-                I&apos;m a developer based in Bangladesh with hands-on experience building full-stack web applications using{" "}
-                <strong className="font-semibold text-white">React, Next.js, TypeScript, Node.js, and MongoDB</strong>. Rather than just building static pages, I focus on complete product workflows—from secure authentication and REST API integration to responsive, accessible UI design.
+                I&apos;m a developer based in Bangladesh with hands-on
+                experience building full-stack web applications using{" "}
+                <strong className="font-semibold text-white">
+                  React, Next.js, TypeScript, Node.js, and MongoDB
+                </strong>
+                . Rather than just building static pages, I focus on complete
+                product workflows—from secure authentication and REST API
+                integration to responsive, accessible UI design.
               </p>
               <p>
-                Currently seeking entry-level developer roles, internships, or collaborative engineering teams where I can contribute immediately, ship reliable features, and grow under experienced mentorship.
+                Currently seeking entry-level developer roles, internships, or
+                collaborative engineering teams where I can contribute
+                immediately, ship reliable features, and grow under experienced
+                mentorship.
               </p>
 
               {/* Quick Metrics Bar */}
               <div className="grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
                 <div>
-                  <p className="font-heading text-2xl font-bold text-white sm:text-3xl">6+</p>
-                  <p className="mt-1 text-xs text-gray-400 sm:text-sm">Deployed Projects</p>
+                  <p className="font-heading text-2xl font-bold text-white sm:text-3xl">
+                    6+
+                  </p>
+                  <p className="mt-1 text-xs text-gray-400 sm:text-sm">
+                    Deployed Projects
+                  </p>
                 </div>
                 <div>
-                  <p className="font-heading text-2xl font-bold text-violet-400 sm:text-3xl">MERN</p>
-                  <p className="mt-1 text-xs text-gray-400 sm:text-sm">& Next.js Stack</p>
+                  <p className="font-heading text-2xl font-bold text-violet-400 sm:text-3xl">
+                    MERN
+                  </p>
+                  <p className="mt-1 text-xs text-gray-400 sm:text-sm">
+                    & Next.js Stack
+                  </p>
                 </div>
                 <div>
-                  <p className="font-heading text-2xl font-bold text-white sm:text-3xl">100%</p>
-                  <p className="mt-1 text-xs text-gray-400 sm:text-sm">Responsive UI</p>
+                  <p className="font-heading text-2xl font-bold text-white sm:text-3xl">
+                    100%
+                  </p>
+                  <p className="mt-1 text-xs text-gray-400 sm:text-sm">
+                    Responsive UI
+                  </p>
                 </div>
               </div>
             </div>
@@ -310,7 +402,10 @@ export default function Home() {
       </section>
 
       {/* CATEGORIZED SKILLS */}
-      <section id="skills" className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
+      <section
+        id="skills"
+        className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8"
+      >
         <div className="max-w-2xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-violet-400 uppercase">
             Technical Stack
@@ -319,7 +414,8 @@ export default function Home() {
             Skills & Technologies
           </h2>
           <p className="mt-3 text-sm text-gray-400 sm:text-base">
-            Technologies I use to architect, build, and deploy modern web applications.
+            Technologies I use to architect, build, and deploy modern web
+            applications.
           </p>
         </div>
 
@@ -348,7 +444,10 @@ export default function Home() {
       </section>
 
       {/* PROJECTS WITH FILTER */}
-      <section id="projects" className="border-y border-white/5 bg-white/[0.015]">
+      <section
+        id="projects"
+        className="border-y border-white/5 bg-white/[0.015]"
+      >
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
             <div>
@@ -487,7 +586,9 @@ export default function Home() {
         </h2>
 
         <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-gray-400 sm:text-base">
-          I&apos;m actively open to Junior Web Developer, Frontend, or Full-Stack opportunities. Reach out via email or LinkedIn—I respond promptly.
+          I&apos;m actively open to Junior Web Developer, Frontend, or
+          Full-Stack opportunities. Reach out via email or LinkedIn—I respond
+          promptly.
         </p>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
