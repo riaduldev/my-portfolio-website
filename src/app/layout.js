@@ -16,9 +16,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Riadul Islam | Frontend Developer",
+  title: "Riadul Islam | MERN Stack Developer",
   description:
-    "Portfolio of Riadul Islam, a Frontend Developer skilled in React, Next.js, TypeScript, and modern web technologies.",
+    "Portfolio of Riadul Islam, a MERN Stack Developer skilled in MongoDB, Express.js, React, Node.js, and modern web technologies.",
 };
 
 export default function RootLayout({ children }) {
